@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 const classes = {
 	wrapper: {
 		display: 'flex',
-		flexDirection: 'column',
+		flexDirection: 'row',
 		minHeight: '100vh',
 	},
 	body: {
