@@ -19,6 +19,12 @@ const classes = {
 		flexDirection: 'row',
 		minHeight: '100vh',
 	},
+	headernav:{
+		position:'fixed',
+		left:0,
+		top:0,
+		minHeight:'100vh'
+	},
 	body: {
 		flexGrow: 1,
 	},
@@ -51,7 +57,7 @@ const App = (props) => {
 	const currentSectionKey = (currentSection && currentSection.key) || 'dashboard';
 	return (
 		<div className={css(classes.wrapper)}>
-			<header>
+			<header className={ css(classes.headernav) }>
 				<MobileNavigation
 					brand={Keystone.brand}
 					currentListKey={props.params.listId}
