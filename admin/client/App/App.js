@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 const classes = {
 	wrapper: {
 		display: 'flex',
-		flexDirection: 'row',
+		flexDirection: 'column',
 		minHeight: '100vh',
 	},
 	headernav:{
@@ -57,7 +57,7 @@ const App = (props) => {
 	const currentSectionKey = (currentSection && currentSection.key) || 'dashboard';
 	return (
 		<div className={css(classes.wrapper)}>
-			<header className={ css(classes.headernav) }>
+			<div className={ css(classes.headernav) }>
 				<MobileNavigation
 					brand={Keystone.brand}
 					currentListKey={props.params.listId}
@@ -79,7 +79,7 @@ const App = (props) => {
 						itemId={props.params.itemId}
 					/>
 				) : null}
-			</header>
+			</div>
 			<main className={css(classes.body)}>
 				{children}
 			</main>
