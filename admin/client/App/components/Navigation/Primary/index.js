@@ -46,19 +46,19 @@ var PrimaryNavigation = React.createClass({
 		);
 	},
 	// Render the back button
-	renderBackButton () {
-		if (!Keystone.backUrl) return null;
+	// renderBackButton () {
+	// 	if (!Keystone.backUrl) return null;
 
-		return (
-			<PrimaryNavItem
-				label="octicon-globe"
-				href={Keystone.backUrl}
-				title={'Front page - ' + this.props.brand}
-			>
-				<span className="octicon octicon-globe" />
-			</PrimaryNavItem>
-		);
-	},
+	// 	return (
+	// 		<PrimaryNavItem
+	// 			label="octicon-globe"
+	// 			href={Keystone.backUrl}
+	// 			title={'Front page - ' + this.props.brand}
+	// 		>
+	// 			<span className="octicon octicon-globe" />
+	// 		</PrimaryNavItem>
+	// 	);
+	// },
 	// Render the link to the webpage
 	renderFrontLink () {
 		return (
